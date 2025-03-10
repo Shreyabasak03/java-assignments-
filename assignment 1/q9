@@ -1,24 +1,15 @@
 import java.util.*;
-
-class sumfac{
-    void fact(int num){
-        int i,fact=1;
-        float sum=0;
-        for(i=1;i<=num;i++){
-            fact*=i;
-            sum+=(float) 1/fact;
-        }
-        
-        System.out.print("Sum of this series: "+sum); 
-    }
-}
-class Q9{
-    public static void main(String []a){
-        int n;
+public class fact{
+    public static void main(String args[]){
         Scanner sc=new Scanner(System.in);
-        System.out.print("Enter n th term :");
-        n=sc.nextInt();
-        sumfac obj=new sumfac();
-        obj.fact(n);
+        int n=5;
+        int factorial=1;
+        double s=0.0;
+        for(int i=1;i<=n;i++){
+            factorial=factorial*i;
+            s=s+1.0/factorial;
+        }
+        System.out.println(s);
     }
+    
 }
