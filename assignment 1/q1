@@ -1,21 +1,17 @@
-public class fibo {
-
-    public static void fibonacci () {
-        int a = 10;
-        int first = 0, second = 1, next, sum = first + second;
-        System.out.print("First 10 number in fibonacci : ");
-        System.out.print(first + " " + second + " ");
-        
-        for (int i = 3; i <= a; i++) {
-            next = first + second;
-            System.out.print(next + " ");
-            sum += next;
-            first = second;
-            second = next;
-        }
-        System.out.println("Total of first 10 Fibonacci numbers: " + sum);
-    }
-    public static void main(String[] args) {
-        fibonacci ();
-    }
+import java.util.*;
+public class Main{
+public static void main(String args[]){
+Scanner sc=new Scanner(System.in);
+int a=0;
+int b=1;
+int s=0;
+for(int i=0; i<=10; i++){
+    System.out.println(a);
+    int c=a+b;
+    a=b;
+    b=c;
+    s=s+a;
+}
+System.out.println(s);
+}
 }
