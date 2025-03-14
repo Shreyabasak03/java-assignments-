@@ -3,8 +3,6 @@ import java.util.*;
 public class PrimeNumbers{
     public static void main(String args[]){
         Scanner scn=new Scanner(System.in);
-        // int low=scn.nextInt();
-        // int high=scn.nextInt();
     for(int n=1;n<=1000;n++){
         int count=0;
     for(int a=2;a*a<=n;a++){
